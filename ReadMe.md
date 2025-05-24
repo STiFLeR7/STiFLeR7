@@ -15,7 +15,7 @@
 
 - 🤝 I’m looking for help with [Multi Modal](https://github.com/STiFLeR7/Multi-Modal-Learning-for-Image-and-Text-Analysis)
 
-- 👨‍💻 All of my projects are available at [github.com/STiFLeR7](github.com/STiFLeR7)
+- 👨‍💻 All of my projects are available at [github.com/STiFLeR7](https://github.com/STiFLeR7)
 
 - 📝 I regularly write articles on [https://medium.com/@stiflerxd](https://medium.com/@stiflerxd)
 
