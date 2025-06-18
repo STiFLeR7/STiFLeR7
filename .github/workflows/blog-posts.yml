@@ -1,17 +1,16 @@
-name: Update README with Medium Posts
+name: Update README with latest Medium Blogs
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Updates every hour
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
   update-readme:
-    name: Update recent Medium articles
+    name: Update blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: gautamkrishnar/blog-post-workflow@v1
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "https://medium.com/feed/@stiflerxd"
