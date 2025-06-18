@@ -1,99 +1,99 @@
 <h1 align="center">👋 Hi, I'm <strong>STiFLeR</strong> — Hill Patel</h1>
 <h3 align="center">AI/ML/DL Researcher | Edge Intelligence Architect | Tech Lead @ <a href="https://github.com/STiFLeR7">CudaBit</a></h3>
 
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=stifler7&style=flat-square&color=7f00ff" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/stifler7?style=social" alt="Followers" />
-  <img src="https://img.shields.io/twitter/follow/stiflerxd?style=social" alt="Twitter Follow" />
-</div>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&pause=1000&color=58A6FF&width=600&center=true&lines=AI+%2F+ML+%2F+DL+Researcher;Edge+LLM+Quantization+Expert;MedAI%2C+MultiModal%2C+Distillation;Tech+Lead+%40+CudaBit;Deployable+AI+Pipelines+Architect;Exploring+Agentic+AI+Systems" alt="Typing animation">
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=stifler7&label=Profile%20views&color=0e75b6&style=flat" alt="stifler7" />
+  <img src="https://img.shields.io/github/followers/STiFLeR7?label=Followers&style=flat-square" />
+  <img src="https://img.shields.io/badge/Dark--Mode-Enabled-black?style=flat-square&logo=github" />
+</p>
 
 ---
 
-## 🧠 About Me
+### 🧠 Current Focus Areas
 
-I specialize in **deployable AI systems**, with a strong focus on:
-
-- 🧪 **Knowledge Distillation**, **Quantization**, **Multimodal Models**
-- 🛠️ Architecting **LLMs/VLMs** for constrained and scalable hardware
-- ⚙️ **Edge & Embedded AI** using lightweight networks and inference optimization
-- 📚 Blending **research-first approaches** with **real-world deployment pipelines**
+- 🔬 Researching & deploying **LLMs/VLMs** with Edge + Cloud balance
+- 🚀 Leading **Agentic AI Systems**, **Knowledge Distillation**, and **Quantization**
+- 🧩 Working on **MedMNIST-EdgeAI**, **Phi3-EdgeQuant-Agent**, and **Adulteration Detection**
+- 🛠️ Optimizing **TinyML** + **Inference Pipelines** for low-latency applications
 
 ---
 
-## 🚀 Core Projects
+### 🛠️ Projects
 
-- 🔍 [`xRAG-LLM`](https://github.com/pyschofives/xRAG-LLM): Structure-aware Retrieval-Augmented Generation
-- 🧠 [`MedMNIST-EdgeAI`](https://github.com/STiFLeR7/MedMNIST-EdgeAI): Medical KD & compression pipeline
-- 🧪 [`Phi3-EdgeQuant-Agent`](https://github.com/STiFLeR7/Phi3-EdgeQuant-Agent): Quantized Phi-3 LLM for edge chat agents
-- 🖼️ [`Multi-Modal Learning`](https://github.com/STiFLeR7/Multi-Modal-Learning-for-Image-and-Text-Analysis): VQA, image-text matching
+- 🔭 Currently building: [`xRAG-LLM`](https://github.com/pyschofives/xRAG-LLM)
+- 🤝 Collaborating on: [`MedMNIST-EdgeAI`](https://github.com/STiFLeR7/MedMNIST-EdgeAI)
+- 🔎 Seeking contributors for: [`Multi-Modal Learning`](https://github.com/STiFLeR7/Multi-Modal-Learning-for-Image-and-Text-Analysis)
+- 📁 All projects: [GitHub.com/STiFLeR7](https://github.com/STiFLeR7)
 
 ---
 
-## 📝 Recent Blog Posts
-
+### 📝 Blog Posts
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
-📚 More at [medium.com/@stiflerxd](https://medium.com/@stiflerxd)
+📰 More at [Medium.com/@stiflerxd](https://medium.com/@stiflerxd)
 
 ---
 
-## 🧠 Ask Me About
-
-- Low-bit LLM Optimization: `int4/int8`, `LoRA`, `GGUF`, `bitsandbytes`
-- Agentic AI with Small Language Models
-- High-retention KD strategies on medical and vision data
-- Efficient Pipelines for GPU edge + A100 cluster parallelism
-
----
-
-## 🔗 Connect with Me
+### 📡 Contact
 
 <p align="left">
-  <a href="https://linkedin.com/in/hill-patel-6113802a3"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="https://medium.com/@stiflerxd"><img src="https://img.shields.io/badge/Medium-000000?style=flat-square&logo=medium&logoColor=white" /></a>
-  <a href="https://kaggle.com/stifler"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white" /></a>
-  <a href="https://discord.gg/stifler07"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" /></a>
-  <a href="mailto:stiflerxd.ai@cudabit.live"><img src="https://img.shields.io/badge/Mail-stiflerxd.ai@cudabit.live-blue?style=flat-square&logo=gmail" /></a>
+  <a href="https://linkedin.com/in/hill-patel-6113802a3" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="hill-patel" height="30" width="40" />
+  </a>
+  <a href="https://kaggle.com/stifler" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="stifler" height="30" width="40" />
+  </a>
+  <a href="https://instagram.com/stifler.xd" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="stifler.xd" height="30" width="40" />
+  </a>
+  <a href="https://medium.com/@stiflerxd" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="medium" height="30" width="40" />
+  </a>
+  <a href="mailto:stiflerxd.ai@cudabit.live" target="blank">
+    📧 stiflerxd.ai@cudabit.live
+  </a>
 </p>
 
 ---
 
-## 💻 Tech Stack
+### 🧰 Languages & Tools
 
 <p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" height="40" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" />
-  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" width="40" height="40"/>
+  <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/>
 </p>
 
 ---
 
-## 📊 Stats (Dark Theme)
+### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=stifler7&show_icons=true&theme=tokyonight&hide_border=true" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=stifler7&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=stifler7&theme=tokyonight&hide_border=true"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=stifler7&show_icons=true&locale=en&layout=compact&theme=tokyonight" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api?username=stifler7&show_icons=true&locale=en&theme=tokyonight" />
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=stifler7&theme=tokyonight" />
 </p>
 
 ---
 
-## ☕ Support My Work
+### ☕ Support
 
-<a href="https://www.buymeacoffee.com/stiflerxd">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45" width="170" alt="Buy Me A Coffee" />
+<a href="https://www.buymeacoffee.com/stiflerxd" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="Buy Me A Coffee - stiflerxd" />
 </a>
-
----
-
-<sub><center>“Deploy it. Quantize it. Scale it. Research doesn’t wait.”</center></sub>
