@@ -2,7 +2,7 @@ name: Update README with latest Medium Blogs
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Every hour
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Git identity
+        run: |
+          git config --global user.email "stiflerxd.ai@cudabit.live"
+          git config --global user.name "STiFLeR"
+
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://medium.com/feed/@stiflerxd"
