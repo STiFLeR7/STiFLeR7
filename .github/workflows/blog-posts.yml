@@ -18,4 +18,6 @@ jobs:
 
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://rss.app/feeds/dH3wfYHRhT9fP1Gj.xml"
+          feed_list: with:
+  feed_list: "https://medium.com/feed/@stiflerxd"
+
