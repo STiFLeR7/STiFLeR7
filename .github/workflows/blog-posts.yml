@@ -15,7 +15,7 @@ jobs:
 
       - name: Set up Git identity
         run: |
-          git config --global user.email "stiflerxd.ai@cudabit.live"
+          git config --global user.email "hillaniljppatel@gmail.com"
           git config --global user.name "STiFLeR"
 
       - name: Update Blog Section in README
