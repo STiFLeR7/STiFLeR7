@@ -1,0 +1,33 @@
+name: Fallback Blog Update via Python
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"  # Runs daily at 3AM IST
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: pip install feedparser
+
+      - name: Run Blog Updater Script
+        run: python .github/scripts/update_blog.py
+
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.email "stiflerxd.ai@cudabit.live"
+          git config --global user.name "STiFLeR"
+          git add README.md
+          git commit -m "Auto-update: Medium blogs (Python fallback)" || echo "No changes to commit"
+          git push
