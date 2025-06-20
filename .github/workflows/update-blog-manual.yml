@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 3 * * *"  # Runs daily at 3AM IST
 
+permissions:
+  contents: write  # Required to allow pushing changes
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -28,6 +31,6 @@ jobs:
         run: |
           git config --global user.email "stiflerxd.ai@cudabit.live"
           git config --global user.name "STiFLeR"
-          git add README.md
-          git commit -m "Auto-update: Medium blogs (Python fallback)" || echo "No changes to commit"
-          git push
+          git add README.md || echo "README.md not found"
+          git diff --cached --quiet && echo "No changes to commit" || git commit -m "Auto-update: Medium blogs (Python fallback)"
+          git push || echo "Push skipped (no changes or permission issue)"
