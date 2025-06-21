@@ -23,13 +23,12 @@
 ### 📝 Blog Posts
 <!-- BLOG-POST-LIST:START -->
 
-- 🧠 [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e)  
-  *Architectural comparisons of Large Context Models and Retrieval-Augmented Generation pipelines.*  
+- 🧠 [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e?source=rss-8f87c3f0f707------2)  
   <sub>Published: 2025-06-03</sub>
 
-- ⚙️ [Edge-LLM: Running Qwen2.5–3B on the Edge with Quantization](https://medium.com/@stiflerxd/edge-llm-running-qwen2-5-3b-on-the-edge-with-quantization-1a825de3d722)  
-  *Walkthrough of GPTQ quantization and inference on RTX 3050 for edge deployment.*  
+- 🧠 [Edge-LLM: Running Qwen2.5–3B on the Edge with Quantization](https://medium.com/@stiflerxd/edge-llm-running-qwen2-5-3b-on-the-edge-with-quantization-1a825de3d722?source=rss-8f87c3f0f707------2)  
   <sub>Published: 2025-04-05</sub>
+
 
 <!-- BLOG-POST-LIST:END -->
 
