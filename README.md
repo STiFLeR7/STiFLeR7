@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm STiFLeR aka Hill Patel</h1>
 <h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00F7FF&vCenter=true&width=700&height=40&lines=AI+Researcher+%7C+Quantization+%7C+Edge+LLMs;VLMs+%7C+Multimodal+Distillation;Deployment+%7C+Model+Efficiency" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00F7FF&vCenter=true&width=800&height=40&lines=AI+Researcher+%7C+Quantization+%7C+Edge+LLMs;Multimodal+Reasoning+%7C+Knowledge+Distillation;Systems+Optimization+%7C+Deployment+%7C+Agents" alt="Typing SVG" />
 </h3>
 
 <p align="center">
@@ -11,12 +11,13 @@
 
 ---
 
-### 📌 Current Projects & Focus
+### 📌 Current Research & Engineering Focus
 
-- 🔭 Actively building: [xRAG-LLM](https://github.com/pyschofives/xRAG-LLM), [Phi3-EdgeQuant-Agent](https://github.com/STiFLeR7/Phi3-EdgeQuant-Agent)  
-- 📊 Publishing: [MedMNIST-EdgeAI](https://github.com/STiFLeR7/MedMNIST-EdgeAI) — research on student-teacher KD and edge deployment  
-- 🔬 Running: [AgenticAI](https://github.com/STiFLeR7/AgenticAI) — real-time autonomous/agentic systems  
-- 🧪 Side Projects: Adulteration Detection, Multimodal Vision-Language Agents, imgshape (PyPI utility)
+- 🔭 **xRAG-LLM** → building cross-modal retrieval-augmented LLMs with dynamic grounding.  
+- 🧑‍🏫 **MedMNIST-EdgeAI** → compressing medical imaging models via knowledge distillation for efficient edge deployment.  
+- 🔬 **AgenticAI** → architecting real-time autonomous AI agents with modular inference schedulers.  
+- ⚡ **Phi3-EdgeQuant-Agent** → custom quantization + serving pipelines for Phi-3 Mini on constrained devices.  
+- 🧪 Active experimentation: **Dynamic Quantization Swapping (DQS)** → adaptive switching between 1-bit, 4-bit, and 8-bit precision during inference.  
 
 ---
 
@@ -37,22 +38,22 @@
 ---
 
 ### 📦 My PyPI Packages
-- [`imgshape`](https://pypi.org/project/imgshape/) - 🔍 Lightweight CLI utility to batch-inspect image shapes.  
+- [`imgshape`](https://pypi.org/project/imgshape/) - 🔍 Lightweight CLI + Python toolkit for dataset inspection, preprocessing recommendations, and ML/DL pipeline compatibility.  
   <img src="https://img.shields.io/pypi/v/imgshape?label=version" />
   <img src="https://img.shields.io/pypi/dm/imgshape?label=downloads" />
 
 ---
 
-### ⚒️ Core Expertise & Tech Stack
+### ⚒️ Technical Expertise
 
-I focus on efficient, reproducible ML systems (research → edge production). Areas I actively work on:
+**Core Domains**  
+- **Quantization & Compression** → GPTQ, AWQ, SmoothQuant, ABQ-LLM, BitNet, + novel adaptive quantization frameworks.  
+- **Knowledge Distillation** → large-to-small model compression, ResNet/MobileNet/EfficientNet pipelines, MedMNIST benchmarks.  
+- **Edge AI & Deployment** → GGUF, LoRA, ONNX, bitsandbytes, PyTorch Lightning, CUDA optimizations.  
+- **Multimodal Systems** → VLMs, cross-modal distillation, hybrid xRAG architectures.  
+- **Agentic AI** → inference orchestration, runtime scheduling, modular agent pipelines.  
 
-- Model compression & quantization (GPTQ, AWQ, SmoothQuant, ABQ, custom dynamic quant schemes)  
-- Knowledge distillation (student–teacher pipelines, MedMNIST-style benchmarks)  
-- Edge-deployable LLMs & VLMs (intelligent quantization + runtime optimizations)  
-- Agentic systems, RAG/xRAG hybrids, and inference orchestration  
-- Tools & infra: PyTorch, bitsandbytes, GGUF, LoRA, ONNX, Docker, CI/CD, cloud run & lightweight serving
-
+**Tools & Infra**  
 <p align="left">
   <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,docker,bash,linux,git,github,aws,gcp,vscode,onnx" />
 </p>
@@ -69,9 +70,17 @@ I focus on efficient, reproducible ML systems (research → edge production). Ar
 
 ---
 
-### 🔭 Research / Papers (selected)
-- Student–teacher KD experiments on MedMNIST (MedMNIST-EdgeAI) — efficient model compression for medical imaging edge deployment.  
-- Dynamic Quantization Swapping (DQS) — adaptive quantization strategies for LLM inference on constrained hardware (drafting).
+### 🔭 Research Highlights
+
+- **MedMNIST-EdgeAI (2025)** → KD-based compression for lightweight medical imaging classifiers.  
+- **Dynamic Quantization Swapping (2025)** → theoretical framework for adaptive precision control in LLM inference.  
+- **Edge-LLM pipelines** → quantizing Qwen, Phi, and similar models for CPU/GPU-constrained inference.  
+
+---
+
+### 🌐 Portfolio
+Check out my projects, blogs, and research work here:  
+👉 [**hillpatel.tech**](https://hillpatel.tech)  
 
 ---
 
@@ -85,6 +94,4 @@ I focus on efficient, reproducible ML systems (research → edge production). Ar
 ---
 
 📫 **Contact**: hillaniljppatel@gmail.com  
-🎯 **Interests**: Edge AI, Quantized LLMs, Cross-modal Reasoning, LoRA + Distillation, PyTorch Lightning, Agent architectures, Inference schedulers.
-
----
+🎯 **Research Interests**: Quantization, Edge AI, Cross-modal Reasoning, Knowledge Distillation, Agentic AI, Efficient Deployment, Runtime Schedulers.
