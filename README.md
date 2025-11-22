@@ -40,7 +40,7 @@
 ### 📦 My PyPI Packages
 - [`imgshape`](https://pypi.org/project/imgshape/) - 🔍 Lightweight CLI + Python toolkit for dataset inspection, preprocessing recommendations, and ML/DL pipeline compatibility.  
   <img src="https://img.shields.io/pypi/v/imgshape?label=version" />
-  <img src="https://img.shields.io/pypi/dm/imgshape?label=downloads" />
+  <i[![PyPI Downloads](https://static.pepy.tech/personalized-badge/imgshape?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/imgshape)/>
 
 ---
 
