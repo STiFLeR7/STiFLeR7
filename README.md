@@ -96,7 +96,9 @@ Framework switching **1-bit → 4-bit → 8-bit** at runtime
 
 ### 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
-*(Recent blog posts will appear here automatically after the first workflow run)*
+- 🧠 [MedMNIST-EdgeAI: Compressing Medical Imaging Models for Efficient Edge Deployment](https://medium.com/@stiflerxd/medmnist-edgeai-compressing-medical-imaging-models-for-efficient-edge-deployment-e12f160d6f36)
+- 🧠 [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e)
+- 🧠 [Edge-LLM: Running Qwen2.5–3B on the Edge with Quantization](https://medium.com/@stiflerxd/edge-llm-running-qwen2-5-3b-on-the-edge-with-quantization-1a825de3d722)
 <!-- BLOG-POST-LIST:END -->
 
 <br/>
@@ -118,15 +120,15 @@ Framework switching **1-bit → 4-bit → 8-bit** at runtime
 
 <br/>
 
-# � **GitHub Stats**
+# 📊 **GitHub Stats**
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=STiFLeR7&theme=tokyonight" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=stifler7&theme=tokyonight" />
 </p>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=STiFLeR7&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=stifler7&show_icons=true&theme=tokyonight" />
 </p>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=STiFLeR7&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=stifler7&layout=compact&theme=tokyonight" />
 </p>
 
 ---
