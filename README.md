@@ -96,22 +96,23 @@ Framework switching **1-bit → 4-bit → 8-bit** at runtime
 
 ### 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
+*(Recent blog posts will appear here automatically after the first workflow run)*
 <!-- BLOG-POST-LIST:END -->
 
 <br/>
 
 # 🔗 **Connect with Me**
 
-| Platform | Link |
-|---------|------|
-| 🐙 **GitHub** | `STiFLeR7` |
-| 📝 **Medium** | `@stiflerxd` |
-| 🤖 **HuggingFace** | `STiFLeR7` |
-| 📘 **Kaggle** | `stiflerxd` |
-| 📸 **Instagram** | `stifler.xd` |
-| 📦 **PyPI** | `stifler.xd` |
-| 🌐 **Portfolio** | https://hillpatel.tech |
-| ✉️ **Email** | `hill.2022bsccs024@student.nimsuniversity.org` |
+<p align="center">
+  <a href="https://github.com/STiFLeR7"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://medium.com/@stiflerxd"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium"/></a>
+  <a href="https://huggingface.co/STiFLeR7"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace"/></a>
+  <a href="https://kaggle.com/stiflerxd"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle"/></a>
+  <a href="https://instagram.com/stifler.xd"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://pypi.org/user/stifler.xd/"><img src="https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI"/></a>
+  <a href="https://hillpatel.tech"><img src="https://img.shields.io/badge/Portfolio-hillpatel.tech-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="mailto:hill.2022bsccs024@student.nimsuniversity.org"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
 ---
 
