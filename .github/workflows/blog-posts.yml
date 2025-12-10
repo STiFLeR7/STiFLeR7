@@ -5,7 +5,7 @@ on:
     - cron: '0 * * * *'  # Every hour
   workflow_dispatch:
 
-  workflow_dispatch:
+
 
 permissions:
   contents: write # Required to write the README back to the repository
