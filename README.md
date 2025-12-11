@@ -96,9 +96,17 @@ Framework switching **1-bit → 4-bit → 8-bit** at runtime
 
 ### 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
-- [MedMNIST-EdgeAI: Compressing Medical Imaging Models for Efficient Edge Deployment](https://medium.com/@stiflerxd/medmnist-edgeai-compressing-medical-imaging-models-for-efficient-edge-deployment-e12f160d6f36?source=rss-8f87c3f0f707------2)
-- [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e?source=rss-8f87c3f0f707------2)
-- [Edge-LLM: Running Qwen2.5–3B on the Edge with Quantization](https://medium.com/@stiflerxd/edge-llm-running-qwen2-5-3b-on-the-edge-with-quantization-1a825de3d722?source=rss-8f87c3f0f707------2)
+
+- 🧠 [MedMNIST-EdgeAI: Compressing Medical Imaging Models for Efficient Edge Deployment](https://medium.com/@stiflerxd/medmnist-edgeai-compressing-medical-imaging-models-for-efficient-edge-deployment-e12f160d6f36?source=rss-8f87c3f0f707------2)  
+  <sub>Published: 2025-07-10</sub>
+
+- 🧠 [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e?source=rss-8f87c3f0f707------2)  
+  <sub>Published: 2025-06-03</sub>
+
+- 🧠 [Edge-LLM: Running Qwen2.5–3B on the Edge with Quantization](https://medium.com/@stiflerxd/edge-llm-running-qwen2-5-3b-on-the-edge-with-quantization-1a825de3d722?source=rss-8f87c3f0f707------2)  
+  <sub>Published: 2025-04-05</sub>
+
+
 <!-- BLOG-POST-LIST:END -->
 
 <br/>
