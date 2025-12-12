@@ -47,7 +47,7 @@ if __name__ == "__main__":
 ### 🧠 **System Architecture**
 
 ```mermaid
-graph LR
+graph TD
     A[Data Ingestion] --> B{Model Design}
     B -->|Research| C[PyTorch/HF]
     B -->|Fine-Tuning| D[LoRA/QLoRA]
@@ -64,24 +64,24 @@ graph LR
 
 ---
 
-### � **Tech Stack Layers**
+### 🛠 **Tech Stack Layers**
 
 <table align="center">
   <tr>
-    <td align="center" width="90">
-      <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,sqlite" width="100%" />
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,sqlite" height="50" />
       <br><b>Core AI</b>
     </td>
-    <td align="center" width="120">
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,linux,git,github" width="100%" />
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,linux,git,github" height="50" />
       <br><b>Infrastructure</b>
     </td>
-    <td align="center" width="90">
-      <img src="https://skillicons.dev/icons?i=fastapi,redis,postgres,nginx" width="100%" />
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=fastapi,redis,postgres,nginx" height="50" />
       <br><b>Backend</b>
     </td>
-    <td align="center" width="90">
-      <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,ts" width="100%" />
+    <td align="center">
+      <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,ts" height="50" />
       <br><b>Frontend</b>
     </td>
   </tr>
@@ -102,9 +102,9 @@ graph LR
 
 ### 📝 **Latest Research & Articles**
 <!-- BLOG-POST-LIST:START -->
-- 🧠 [MedMNIST-EdgeAI: Compressing Medical Imaging Models for Efficient Edge Deployment](https://medium.com/@stiflerxd/medmnist-edgeai-compressing-medical-imaging-models-for-efficient-edge-deployment-e12f160d6f36)
-- 🧠 [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e)
-- 🧠 [Edge-LLM: Running Qwen2.5–3B on the Edge with Quantization](https://medium.com/@stiflerxd/edge-llm-running-qwen2-5-3b-on-the-edge-with-quantization-1a825de3d722)
+- [MedMNIST-EdgeAI: Compressing Medical Imaging Models for Efficient Edge Deployment](https://medium.com/@stiflerxd/medmnist-edgeai-compressing-medical-imaging-models-for-efficient-edge-deployment-e12f160d6f36?source=rss-8f87c3f0f707------2)
+- [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e?source=rss-8f87c3f0f707------2)
+- [Edge-LLM: Running Qwen2.5–3B on the Edge with Quantization](https://medium.com/@stiflerxd/edge-llm-running-qwen2-5-3b-on-the-edge-with-quantization-1a825de3d722?source=rss-8f87c3f0f707------2)
 <!-- BLOG-POST-LIST:END -->
 
 ---
