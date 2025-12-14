@@ -1,17 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00f2ff&height=280&section=header&text=USER:%20STiFLeR7&fontSize=80&fontColor=ffffff&desc=INITIALIZING%20NEURAL%20INTERFACE...&descSize=25&descAlign=50&descAlignY=60&animation=fadeIn" width="100%" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0d1117,ff00cc,00f2ff&height=280&section=header&text=USER:%20STiFLeR7&fontSize=80&fontColor=ffffff&desc=INITIALIZING%20NEURAL%20INTERFACE...&descSize=25&descAlign=50&descAlignY=60&animation=fadeIn" width="100%" alt="Header" />
 </div>
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=24&pause=1000&color=00F2FF&center=true&vCenter=true&width=500&lines=AI+Architect+%7C+Research+Engineer;Deploying+Intelligence+at+Scale;System+Status:+ONLINE+⚡" alt="Typing SVG" />
-</div>
-
-<div align="center">
-  
-  [![Website](https://img.shields.io/badge/LINK-PORTFOLIO-0a0a0a?style=for-the-badge&logo=vercel&logoColor=00f2ff&color=0a0a0a)](https://hillpatel.tech)
-  [![Medium](https://img.shields.io/badge/READ-MEDIUM-0a0a0a?style=for-the-badge&logo=medium&logoColor=00f2ff&color=0a0a0a)](https://medium.com/@stiflerxd)
-  [![HuggingFace](https://img.shields.io/badge/MODEL-HUGGINGFACE-0a0a0a?style=for-the-badge&logo=huggingface&logoColor=00f2ff&color=0a0a0a)](https://huggingface.co/STiFLeR7)
-
 </div>
 
 <br />
@@ -43,6 +35,33 @@ class Hill_Patel(AI_Architect):
 
 ---
 
+### 🌐 `>_ /net/uplink/social_protocols`
+
+<div align="center">
+
+<a href="https://hillpatel.tech" target="_blank">
+  <img src="https://img.shields.io/badge/PORTFOLIO-0d1117?style=for-the-badge&logo=vercel&logoColor=00f2ff" alt="Portfolio" />
+</a>
+<a href="https://www.linkedin.com/in/hill-patel-stifler7/" target="_blank">
+  <img src="https://img.shields.io/badge/LINKEDIN-0d1117?style=for-the-badge&logo=linkedin&logoColor=0077b5" alt="LinkedIn" />
+</a>
+<a href="https://github.com/STiFLeR7" target="_blank">
+  <img src="https://img.shields.io/badge/GITHUB-0d1117?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub" />
+</a>
+<a href="https://medium.com/@stiflerxd" target="_blank">
+  <img src="https://img.shields.io/badge/MEDIUM-0d1117?style=for-the-badge&logo=medium&logoColor=ffffff" alt="Medium" />
+</a>
+<a href="https://huggingface.co/STiFLeR7" target="_blank">
+  <img src="https://img.shields.io/badge/HUGGINGFACE-0d1117?style=for-the-badge&logo=huggingface&logoColor=ffd21e" alt="HuggingFace" />
+</a>
+<a href="mailto:stifler@hillpatel.tech" target="_blank">
+  <img src="https://img.shields.io/badge/EMAIL-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335" alt="Email" />
+</a>
+
+</div>
+
+---
+
 ### ⚙️ `>_ /sys/modules/tech_stack`
 > **[SYSTEM MESSAGE]**: Click "SCAN" to analyze module components.
 
@@ -52,7 +71,7 @@ class Hill_Patel(AI_Architect):
 <summary><code>[+] SCAN MODULE: NEURAL_CORE (AI & ML)</code></summary>
 <br />
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,scikitlearn,python" height="60" alt="AI Icons" />
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,scikitlearn,python&theme=dark" height="60" alt="AI Icons" />
   <br /><br />
   <code>STATUS: OPTIMIZED</code>
 </div>
@@ -62,7 +81,7 @@ class Hill_Patel(AI_Architect):
 <summary><code>[+] SCAN MODULE: DEPLOYMENT_GRID (Cloud & DevOps)</code></summary>
 <br />
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,bash,linux" height="60" alt="Cloud Icons" />
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,bash,linux&theme=dark" height="60" alt="Cloud Icons" />
   <br /><br />
   <code>STATUS: SCALABLE</code>
 </div>
@@ -72,7 +91,7 @@ class Hill_Patel(AI_Architect):
 <summary><code>[+] SCAN MODULE: BACKEND_MAINFRAME (Server-Side)</code></summary>
 <br />
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=fastapi,redis,postgres,mongodb,nginx" height="60" alt="Backend Icons" />
+  <img src="https://skillicons.dev/icons?i=fastapi,redis,postgres,mongodb,nginx&theme=dark" height="60" alt="Backend Icons" />
   <br /><br />
   <code>STATUS: HIGH_THROUGHPUT</code>
 </div>
@@ -82,7 +101,7 @@ class Hill_Patel(AI_Architect):
 <summary><code>[+] SCAN MODULE: VISUAL_INTERFACE (Frontend)</code></summary>
 <br />
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,ts,js" height="60" alt="Frontend Icons" />
+  <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,ts,js&theme=dark" height="60" alt="Frontend Icons" />
   <br /><br />
   <code>STATUS: RESPONSIVE</code>
 </div>
@@ -172,13 +191,17 @@ class Hill_Patel(AI_Architect):
 
 <div align="center">
   <br />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=stifler7&theme=react&hide_border=true&background=0D1117&ring=00F2FF&fire=00F2FF&currStreakLabel=00F2FF" alt="Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=STiFLeR7&theme=radical&hide_border=true&background=0D1117" alt="Streak" />
   <br /><br />
-  <img src="https://github-readme-stats.vercel.app/api?username=stifler7&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00F2FF&icon_color=00F2FF&text_color=ffffff&count_private=true" alt="Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=STiFLeR7&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&count_private=true" alt="Stats" />
+  <br /><br />
+  
+  ![Trophy](https://github-profile-trophy.vercel.app/?username=STiFLeR7&theme=radical&no-frame=true&no-bg=true&margin-w=4)
+
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00f2ff&height=100&section=footer&text=" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0d1117,ff00cc,00f2ff&height=100&section=footer&text=" width="100%" />
 </div>
