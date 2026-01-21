@@ -38,7 +38,7 @@ class Hill_Patel(AI_Architect):
 ### � `>_ /sys/achievements/trophies`
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=STiFLeR7&theme=gitdimmed&no-frame=true&no-bg=true&margin-w=4" alt="Trophies" />
+  <img src="https://raw.githubusercontent.com/STiFLeR7/STiFLeR7/master/github-trophies.svg" alt="Trophies" width="100%" />
 </div>
 
 <br />
