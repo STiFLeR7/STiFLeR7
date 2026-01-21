@@ -1,47 +1,55 @@
 name: Metrics
 on:
   # Schedule updates (every 12 hours)
-  schedule: [{cron: "0 */12 * * *"}]
+  schedule: [{cron:  "0 */12 * * *"}]
   # Lines below let you run workflow manually and on each commit
-  workflow_dispatch:
+  workflow_dispatch: 
   push: {branches: ["master", "main"]}
 jobs:
-  github-metrics:
+  github-metrics: 
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents:  write
     steps:
       - name: Install dependencies
-        run: |
+        run:  |
           sudo apt-get update
-          sudo apt-get install -y jq
-          if ! command -v docker &> /dev/null; then
-            sudo apt-get install -y docker.io
-          else
-            echo "Docker is already installed"
-            docker --version
-          fi
-      - uses: lowlighter/metrics@latest
+          sudo apt-get install -y jq docker.io
+          docker --version
+          jq --version
+          
+      - name: Generate GitHub Metrics
+        uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token:  ${{ secrets.METRICS_TOKEN }}
           
           # Options
           user: STiFLeR7
           template: classic
           base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Kolkata
+          config_timezone:  Asia/Kolkata
+          
+          # Enable debugging
+          debug: true
+          verify: true
+          
+          # Plugins
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          
           plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css
+          plugin_languages_ignored: html, css
           plugin_languages_details: lines, percentage
-          plugin_habits: yes
+          plugin_languages_threshold: 0%
+          
+          plugin_habits:  yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
+          plugin_habits_from:  200
+          plugin_habits_days: 14
           
           # Output configuration
           filename: github-metrics.svg
           output_action: commit
           committer_branch: output
-          committer_message: "chore: update metrics"
+          committer_message: "chore:  update metrics [skip ci]"
