@@ -38,7 +38,7 @@ jobs:
           plugin_languages_limit: 8
           
           # Output configuration
-          filename: github-metrics. svg
+          filename: github-metrics.svg
           output_action: commit
           committer_branch: master
-          committer_message: "chore:  update metrics [skip ci]"
+          committer_message: "chore: update metrics [skip ci]"

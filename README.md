@@ -148,7 +148,7 @@ class Hill_Patel(AI_Architect):
 ### 📉 `>_ /sys/monitoring/activity_metrics`
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/STiFLeR7/STiFLeR7/output/github-metrics.svg" alt="Metrics" width="100%" />
+  <img src="https://raw.githubusercontent.com/STiFLeR7/STiFLeR7/master/github-metrics.svg" alt="Metrics" width="100%" />
 </div>
 
 <br />
