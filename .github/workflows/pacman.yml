@@ -5,7 +5,7 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
-jobs:
+jobs: 
   build:
     runs-on: ubuntu-latest
     name: generate-pacman-graph
@@ -14,22 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth:  0
       - uses: abozanona/pacman-contribution-graph@main
-        with:
+        with: 
           github_user_name: ${{ github.repository_owner }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Move to dist
-        run: |
-          mkdir -p dist
-          mv pacman-contribution-graph.svg dist/
-
+      # The action already creates files in dist/, so we can skip the move step
+      # and directly push the dist folder
       - name: Push to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v3. 1.0
         with:
           target_branch: output
           build_dir: dist
-        env:
+        env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
