@@ -11,6 +11,14 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Check and Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+          echo "Docker version:"
+          docker --version || echo "Docker not found"
+          echo "JQ version:"
+          jq --version
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
