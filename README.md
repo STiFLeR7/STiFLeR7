@@ -135,6 +135,7 @@ class Hill_Patel(AI_Architect):
 
 ### 📡 `>_ /net/uplink/latest_transmissions`
 <!-- BLOG-POST-LIST:START -->
+- [Most Vision AI Systems Stop at Detection — I Built One That Takes Action](https://medium.com/@stiflerxd/most-vision-ai-systems-stop-at-detection-i-built-one-that-takes-action-ce439f904215?source=rss-8f87c3f0f707------2)
 - [Most RAG Systems Fail Quietly — Here’s How I Built a 98%-Accurate Agent on a 6GB GPU](https://medium.com/@stiflerxd/most-rag-systems-fail-quietly-heres-how-i-built-a-98-accurate-agent-on-a-6gb-gpu-4edc9d05116e?source=rss-8f87c3f0f707------2)
 - [MedMNIST-EdgeAI: Compressing Medical Imaging Models for Efficient Edge Deployment](https://medium.com/@stiflerxd/medmnist-edgeai-compressing-medical-imaging-models-for-efficient-edge-deployment-e12f160d6f36?source=rss-8f87c3f0f707------2)
 - [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e?source=rss-8f87c3f0f707------2)
