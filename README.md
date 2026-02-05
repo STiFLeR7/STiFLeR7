@@ -211,5 +211,5 @@ class Hill_Patel(AI_Researcher):
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0d1117,30363d,2ea043&height=100&section=footer&text=" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,19&height=100&section=footer&text=" width="100%" />
 </div>
