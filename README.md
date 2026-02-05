@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0d1117,30363d,2ea043&height=300&section=header&text=STiFLeR7&fontSize=90&fontColor=ffffff&desc=INITIALIZING%20NEURAL%20INTERFACE...&descSize=20&descAlign=50&descAlignY=80&animation=fadeIn" width="100%" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,19&height=300&section=header&text=STiFLeR7&fontSize=90&fontColor=ffffff&desc=INITIALIZING%20NEURAL%20INTERFACE...&descSize=20&descAlign=50&descAlignY=80&animation=fadeIn" width="100%" alt="Header" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=24&pause=1000&color=2ea043&center=true&vCenter=true&width=500&lines=AI+Architect+%7C+Research+Engineer;Deploying+Intelligence+at+Scale;System+Status:+ONLINE+⚡" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=24&pause=1000&color=2ea043&center=true&vCenter=true&width=600&lines=AI+Researcher+%26+Developer+%7C+OSS+Contributor;Deploying+Intelligence+at+Scale;System+Status:+ONLINE+⚡" alt="Typing SVG" />
 </div>
 
 <br />
@@ -13,15 +13,15 @@
 ### 📂 `>_ /sys/identify_user.py`
 
 ```python
-class Hill_Patel(AI_Architect):
+class Hill_Patel(AI_Researcher):
     """
-    [INFO] Architecting bridge between Research and Production.
+    [INFO] Building open-source AI tools for the community.
     [WARN] High compute requirements detected.
     """
     def __init__(self):
         self.code = "STiFLeR7"
         self.specs = {
-            "role": "AI Engineer & Full-Stack Architect",
+            "role": "AI Researcher & Developer | OSS Contributor",
             "focus": ["LLMs", "RAG Systems", "Edge AI", "Quantization"],
             "driver": "Deploying Scalable Intelligence"
         }
@@ -35,10 +35,25 @@ class Hill_Patel(AI_Architect):
 
 ---
 
-### � `>_ /sys/achievements/trophies`
+### 🏆 `>_ /sys/achievements/trophies`
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/STiFLeR7/STiFLeR7/master/github-trophies.svg" alt="Trophies" width="100%" />
+</div>
+
+<br />
+
+---
+
+### 🎖️ `>_ /sys/achievements/badges`
+
+<div align="center">
+
+| <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="100" alt="Pull Shark" /> | <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="100" alt="YOLO" /> |
+|:---:|:---:|
+| **Pull Shark** | **YOLO** |
+| Mass PR Merger | Merged without review |
+
 </div>
 
 <br />
@@ -74,20 +89,47 @@ class Hill_Patel(AI_Architect):
 
 ### 🛠️ `>_ /sys/modules/technical_skills`
 
-**LLMs & Retrieval**
-> `RAG`, `Hybrid/Vector Search`, `Re-ranking`, `LangChain/LangGraph`, `Agentic AI`
+<div align="center">
 
-**Model Optimization**
-> `Quantization (1–8 bit)`, `Pruning`, `Distillation`, `ONNX Runtime`, `TensorRT`, `CUDA tuning`
+#### 🧠 LLMs & Retrieval
+![RAG](https://img.shields.io/badge/RAG-2ea043?style=flat-square&logo=openai&logoColor=white)
+![Vector Search](https://img.shields.io/badge/Vector_Search-30363d?style=flat-square&logo=elasticsearch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-0d1117?style=flat-square&logo=graphql&logoColor=2ea043)
+![Agentic AI](https://img.shields.io/badge/Agentic_AI-6366f1?style=flat-square&logo=robot&logoColor=white)
 
-**ML Engineering**
-> `CNNs`, `Transformers`, `Multimodal Models`, `Evaluation (AUROC, F1, hit@K, latency, cost)`
+#### ⚡ Model Optimization
+![Quantization](https://img.shields.io/badge/Quantization_(1--8_bit)-ff6b6b?style=flat-square&logo=compress&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white)
+![TensorRT](https://img.shields.io/badge/TensorRT-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA_Tuning-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![Pruning](https://img.shields.io/badge/Pruning-f97316?style=flat-square&logo=scissors&logoColor=white)
 
-**Backend & MLOps**
-> `FastAPI`, `Docker`, `CI/CD (GitHub Actions)`, `Redis`, `Observability (OTel, Prometheus)`, `GCP`, `AWS`, `SQL`
+#### 🔬 ML Engineering
+![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![CNNs](https://img.shields.io/badge/CNNs-0d1117?style=flat-square&logo=tensorflow&logoColor=FF6F00)
+![Multimodal](https://img.shields.io/badge/Multimodal_Models-8B5CF6?style=flat-square&logo=openai&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
-**Languages & Tools**
-> `Python`, `PyTorch`, `TensorFlow`, `NumPy`, `Pandas`, `OpenCV`, `Gradio`, `Git`, `Linux`
+#### 🚀 Backend & MLOps
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)
+
+#### 💻 Languages & Tools
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat-square&logo=gradio&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+
+</div>
 
 <br />
 
@@ -113,9 +155,9 @@ class Hill_Patel(AI_Architect):
 | <a href="https://github.com/STiFLeR7/DevPulseAIv2"><b>⚡ DevPulseAIv2</b></a> | <code>[DEV-TOOL]</code> Advanced AI assistant for developer productivity and workflow optimization. | <code>AI Agents</code> <code>Python</code> <code>LLM</code> |
 | <a href="https://github.com/STiFLeR7/imgshape"><b>📦 imgshape</b></a> | <code>[CLI-TOOL]</code> Intelligent dataset analysis framework. Auto-generates reports & pipelines. | <code>Python</code> <code>PyPI</code> <code>Analysis</code> |
 | <a href="https://github.com/STiFLeR7/Qwen3-iOS"><b>📱 Qwen3-iOS</b></a> | <code>[MOBILE-AI]</code> On-device inference of Qwen3 models optimized for iOS architecture. | <code>Swift</code> <code>CoreML</code> <code>Quantization</code> |
-| <a href="https://github.com/STiFLeR7/SpecCraft-AI"><b>🦾 SpecCraft-AI</b></a> | <code>[PLATFORM]</code> Analyst-Grade AI Spec Generation Platform with specialized UI. | <code>Next.js</code> <code>AI-Agents</code> <code>RAG</code> |
-| <a href="https://github.com/STiFLeR7/TTGv1-Docker"><b>🏭 TTGv1-Docker</b></a> | <code>[ENTERPRISE]</code> Scalable scheduling engine solving complex constraint problems. | <code>Docker</code> <code>OR-Tools</code> <code>Redis</code> |
-| <a href="https://github.com/STiFLeR7/FastFare-v1-GCP"><b>🚕 FastFare-v1-GCP</b></a> | <code>[SaaS]</code> AI-Logistics assistant. Automated RAG pipeline with vector search. | <code>GCP</code> <code>RAG</code> <code>FastAPI</code> |
+| <a href="https://github.com/STiFLeR7/agentic-rag"><b>🧠 agentic-rag</b></a> | <code>[RAG-SYSTEM]</code> Production-grade Agentic RAG for consumer GPUs (RTX 3050/6GB). Graph-based, controllable architecture. | <code>LangGraph</code> <code>RAG</code> <code>Agents</code> |
+| <a href="https://github.com/STiFLeR7/dex"><b>🤖 Dex</b></a> | <code>[AI-ASSISTANT]</code> Production-grade personal AI assistant built on MCP. Persistent, memory-aware. | <code>MCP</code> <code>Python</code> <code>LLM</code> |
+| <a href="https://github.com/STiFLeR7/antigravity"><b>🚀 Antigravity</b></a> | <code>[TOOL-SERVER]</code> Universal LLM Tool Server - Connect Claude, OpenAI, and Gemini to your workspace. | <code>MCP</code> <code>LLM</code> <code>Tools</code> |
 
 </div>
 
