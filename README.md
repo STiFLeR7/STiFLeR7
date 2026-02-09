@@ -49,10 +49,10 @@ class Hill_Patel(AI_Researcher):
 
 <div align="center">
 
-| <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="100" alt="Pull Shark" /> | <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="100" alt="YOLO" /> | <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="100" alt="Quickdraw" /> | <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="100" alt="Pair Extraordinaire" /> |
-|:---:|:---:|:---:|:---:|
-| **Pull Shark** | **YOLO** | **Quickdraw** | **Pair Extraordinaire** |
-| Mass PR Merger | Merged without review | Closed issue/PR quickly | Co-authored commits |
+| <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="100" alt="Pull Shark" /> | <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="100" alt="YOLO" /> | <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="100" alt="Quickdraw" /> | <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="100" alt="Pair Extraordinaire" /> | <img src="https://github.githubassets.com/images/modules/profile/achievements/galaxy-brain-default.png" width="100" alt="Galaxy Brain" /> |
+|:---:|:---:|:---:|:---:|:---:|
+| **Pull Shark** | **YOLO** | **Quickdraw** | **Pair Extraordinaire** | **Galaxy Brain** |
+| Mass PR Merger | Merged without review | Closed issue/PR quickly | Co-authored commits | Answered discussions |
 
 </div>
 
