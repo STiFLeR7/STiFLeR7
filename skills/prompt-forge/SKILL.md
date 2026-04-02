@@ -1,6 +1,6 @@
 ---
 name: prompt-forge
-description: "Use this skill whenever a developer wants help writing, improving, or refining prompts for Claude Code. Also triggers on first contact with any project to bootstrap CLAUDE.md with battle-tested agentic principles. Triggers include: requests to 'help me prompt', 'write a prompt for', 'improve my prompt', 'supercharge my setup', 'bootstrap CLAUDE.md', 'I need to ask Claude Code to...', or any time a user pastes a rough/vague task description and wants it turned into an effective Claude Code prompt. Also trigger when users mention prompt quality, CLAUDE.md files, or say things like 'how should I ask Claude to...' or 'I want Claude Code to do X but I don't know how to phrase it'. Trigger even for casual phrasing like 'help me tell Claude to...' or 'what's the best way to prompt for...'. If someone is clearly struggling with getting good results from Claude Code and the issue might be prompt quality, suggest this skill."
+description: "Use when a developer explicitly asks for help crafting or refining an execution prompt. Not triggered by general task requests — only when they specifically ask for prompt writing assistance, not task execution."
 ---
 
 # Prompt Forge
@@ -18,7 +18,7 @@ Prompt Forge is a **prompt writer**, not a task executor. Its only job is to pro
 - Grep/search for patterns, function names, and references
 - Run web searches to look up docs, best practices, and known issues
 - Fetch web pages for official documentation
-- Read `.claude/prompt-forge-context.md` and write/update it
+- Read local project instructions and relevant files to ground the prompt
 
 These are investigation tools. Use them aggressively — this is how grounding works.
 
@@ -35,8 +35,23 @@ These are investigation tools. Use them aggressively — this is how grounding w
 - Present the prompt as text the developer will copy
 - Ask "Want me to adjust anything, or is this ready to use?" — not "Want me to start implementing?"
 - If the developer says "go" or "do it," clarify: "I've built the prompt — paste it into [Claude Code / GSD / Superpowers] to kick it off. Want me to tweak anything first?"
+- If the developer asks for a prompt and implementation in the same request, treat it as a prompt-refinement request. Deliver the prompt first and explicitly decline to implement in that same turn.
+- If the task is about Prompt Forge itself, this repo, or this exact skill file, that does not change the boundary. Still return only the prompt and do not start validating, editing, or finishing the work yourself.
 
 You are the prompt architect. You read the blueprints and survey the site. The execution tools are the builders.
+
+### Red Flags — Stop and Reread the Cardinal Rule
+
+If you find yourself thinking any of these, you are about to violate the rule:
+
+| Thought | Reality |
+|---------|---------|
+| "The developer said 'go ahead'" | They authorized a prompt, not implementation. Deliver the prompt. |
+| "The prompt is ready, might as well execute it" | Your job ends at delivery. They copy, you stop. |
+| "It's a small change, I'll just make it" | Size doesn't matter. Deliver the prompt. |
+| "They'll just paste it anyway" | Let them. That's the boundary between investigation and execution. |
+| "I need to do X first to write an accurate prompt" | Investigation (read, grep, fetch) is allowed. Implementation is not. |
+| "They asked me to help, not write a prompt" | If they want execution, they should use Claude Code directly. Clarify. |
 
 ## Why this skill exists
 
@@ -73,19 +88,13 @@ The user gives you their rough idea. Read it carefully — not just for content,
 
 Before asking a single question, investigate. Read in this order:
 
-**1. CLAUDE.md** — Always read this first if it exists. It's the project's living brain — conventions, decisions, commands, anti-patterns. Everything you learn here shapes your questions and the final prompt. If no CLAUDE.md exists, note it — you'll propose creating one in Step 7.
+**1. CLAUDE.md** — Always read this first if it exists. It's the project's living brain — conventions, decisions, commands, anti-patterns. Everything you learn here shapes your questions and the final prompt.
 
-**2. `.claude/prompt-forge-context.md`** — Check for the cached project map. If it exists, you have the structure, key paths, and patterns without re-reading the codebase.
-
-**If the file exists:** Read it. You now have the project structure, key paths, patterns, test commands, and conventions without re-reading the entire codebase. Skip the broad survey in 2A and go straight to **task-specific reads** — only open the files directly relevant to the user's current request. This is where the token savings happen.
-
-**If the file doesn't exist:** This is a first run. Do the full analysis in 2A, then **auto-generate** `.claude/prompt-forge-context.md` before proceeding. See the "Context File" section below for the format.
-
-**If the file exists but seems stale** (e.g., user mentions files or patterns that aren't in the context file, or you spot new files in the directory that aren't mapped): Do a targeted refresh — update the relevant sections of the context file, don't regenerate from scratch.
+**2. Project structure and task-specific files** — Read only the files needed to ground the user's current request. Start broad enough to understand the codebase shape, then narrow quickly to the actual task.
 
 #### 2A: Deep code analysis
 
-When no context file exists, or for task-specific deep reads:
+When doing task-specific deep reads:
 
 Read the codebase to ground yourself in reality. This prevents the #1 source of bad prompts: prompts that describe code that doesn't match what actually exists.
 
@@ -107,9 +116,7 @@ Read the codebase to ground yourself in reality. This prevents the #1 source of 
 - Look at test files to understand testing patterns
 - Check CLAUDE.md if it exists — it contains project conventions
 
-**After a full first-run analysis, auto-generate `.claude/prompt-forge-context.md`.** Don't ask — just create it. The developer will see it in their `.claude/` dir and can edit or delete it if they want.
-
-**The grounding rule:** Every file path, function name, variable name, type name, and parameter name that appears in the final prompt must come from actually reading the code. The context file accelerates finding the right files — but you still read the actual files before referencing specifics like function signatures or parameter names. The context file tells you *where* to look; the code tells you *what's there*.
+**The grounding rule:** Every file path, function name, variable name, type name, and parameter name that appears in the final prompt must come from actually reading the code. Survey the codebase enough to find the right files, then read the real implementation before referencing specifics like function signatures or parameter names.
 
 #### 2B: Deep web research + approach exploration
 
@@ -133,7 +140,7 @@ This is what makes Prompt Forge a living skill. Don't just research the specific
 1. Read it. Understand the *core principle* — not the surface features, but the underlying thinking pattern.
 2. Extract what's applicable to the current task and project.
 3. Incorporate that thinking into the prompt you generate.
-4. Capture the principle in the context file under `## Learned approaches` so future sessions can draw from it too.
+4. Weave the useful principle into the prompt when it genuinely improves the current task.
 
 Example: The developer shares Hermes Agent. The core principle isn't "use Hermes" — it's the self-learning loop: capture successful workflows as reusable documents, improve them during use, persist knowledge before it's lost. That principle gets woven into how Prompt Forge evolves CLAUDE.md.
 
@@ -301,190 +308,19 @@ Regardless of task type, every prompt must follow these rules:
 
 If a task spans multiple types (e.g., "fix this bug and add tests"), use the primary type as the base and incorporate sections from the secondary type. For truly compound tasks, suggest separate prompts.
 
-### Step 7: The learning loop — evolve CLAUDE.md for development, not for prompting
+### Step 7: Keep the scope on prompt refinement
 
-Inspired by Hermes Agent's self-improving loop. But with a hard rule:
+Do not write project files, bootstrap CLAUDE.md, or maintain Prompt Forge-specific memory files. If you notice a missing project instruction or a reusable convention that would help future coding sessions, mention it briefly as an optional note after the prompt, but keep the main deliverable focused on the current prompt.
 
-**CLAUDE.md is for DEVELOPMENT — not for Prompt Forge.** Every line in CLAUDE.md should help Claude Code write better code, debug faster, follow the right patterns, and avoid the right mistakes. If a piece of knowledge only helps Prompt Forge write better prompts (like "developer prefers short prompts" or "always include intent breakdowns"), it goes in the context file — never in CLAUDE.md. CLAUDE.md must not become a prompt engine. It must remain a development brain.
+If the developer mixes "write the prompt" with "and then do the work," do not split the difference. Complete only the prompt-forge portion and tell them implementation requires a separate execution request after they review the prompt.
 
-#### 7A: Read first — always
-At the start (Step 2), read CLAUDE.md → context file → then code. CLAUDE.md shapes everything. If it contradicts the code, flag the drift. If it's missing or thin, propose a starter version using the **Agentic Principles Bootstrap** (see 7F below).
+Red flags that mean you are drifting out of scope:
+- "The prompt already looks good, so I should just do the work."
+- "Because the request is about Prompt Forge, I should validate or finish the skill directly."
+- "I can improve the repo first and still count that as prompt help."
+- "I'll return the prompt and also say I can start editing now."
 
-#### 7B: What goes WHERE — the hard boundary
-
-**CLAUDE.md — development knowledge only.** Things that help ANY Claude Code session:
-- Architecture patterns and conventions ("routes use Zod validation → auth middleware → service → response")
-- Error handling conventions ("all service methods throw, never return null")
-- Test/lint/build commands and testing patterns
-- Stack-specific gotchas ("Prisma 5.x needs $transaction for multi-model writes")
-- Architectural decisions with reasoning ("we chose Redis over in-memory because X")
-- Anti-patterns to avoid ("don't replicate the loginUser() null-return pattern — it's a bug")
-- Security conventions ("always validate input before DB queries")
-- Deployment and branching conventions
-
-**Context file (`.claude/prompt-forge-context.md`) — Prompt Forge internal notes.** Things that only help this skill:
-- File paths and structure maps
-- Prompt style preferences ("developer prefers short prompts for simple tasks")
-- Prompt pattern feedback ("bug fix prompts work best when they include the error message")
-- Developer thinking patterns ("prefers simple solutions over architecturally correct ones")
-- Adjustments the developer commonly makes to generated prompts
-- Which lenses the developer cares most about
-
-**The test:** Before adding anything to CLAUDE.md, ask: "Would this help a fresh Claude Code session where the developer is actually coding — no Prompt Forge involved?" If yes → CLAUDE.md. If it only helps Prompt Forge → context file.
-
-#### 7C: The development feedback loop — learn → capture → evolve
-
-After delivering the prompt, reflect on what you learned that helps **development**:
-
-**1. What did I learn about the codebase?**
-- Patterns: how routes, services, tests, and errors are structured
-- Conventions: naming, file organization, validation approach
-- Gotchas: inconsistencies, missing coverage, tech debt
-- Stack knowledge: version-specific issues, deprecation warnings
-
-**2. What decisions were made?**
-- Architectural choices and the reasoning behind them
-- Library/tool selections and why
-- Trade-offs that were considered
-
-**3. Propose exact CLAUDE.md additions**
-Write the actual markdown. Keep it lean — every line should earn its place. The developer says "yeah" or adjusts.
-
-**4. Check for stale/contradictory content**
-Before proposing additions, check if existing CLAUDE.md entries are outdated. Propose updates, not duplicates. Flag drift between CLAUDE.md and the actual code.
-
-**5. Health check — don't bloat CLAUDE.md**
-Claude Code reliably follows ~150 instructions. If CLAUDE.md is getting long, propose consolidation: merge redundant entries, move edge-case rules to `.claude/rules/` files, remove anything Claude can infer from the code. Prompt Forge should keep CLAUDE.md lean and high-signal.
-
-#### 7D: Track Prompt Forge internals + grow the approaches library
-
-All Prompt Forge meta-learning goes in the context file — never CLAUDE.md.
-
-**`## Prompt Forge notes`** — how this developer and project like to be prompted:
-```
-### Developer preferences (for prompting only — NOT for CLAUDE.md)
-- Prefers short prompts for simple tasks
-- Always wants tests included even when not asked
-- Likes alternatives proposed — doesn't want the first idea only
-
-### What works for this project
-- Bug fix prompts: include the error path + reproduction step
-- Feature prompts: always reference an existing implementation
-```
-
-**`## Learned approaches`** — the skill's expanding brain. Every tool the developer shares, every methodology Prompt Forge discovers during research, gets distilled into a reusable principle:
-
-```
-### Self-learning loop (from Hermes Agent)
-- Core: capture successful workflows as reusable docs, improve them during use
-- Applied: CLAUDE.md evolves with every session; context file caches project maps
-
-### Progressive skill loading (from DeerFlow)
-- Core: load only what's needed, when it's needed
-- Applied: context file lets Prompt Forge skip broad analysis on repeat sessions
-
-### Reasoning-action loop (from ReAct, Yao et al.)
-- Core: alternate between reasoning about what to do and taking action — never act without stating why
-- Applied: "Reason before each edit" principle in CLAUDE.md bootstrap
-
-### Reflective retry (from Reflexion, Shinn et al.)
-- Core: after failure, generate verbal reflection on what went wrong before retrying
-- Applied: "Reflect before retrying" — diagnose root cause in words before changing code
-
-### Tree-search backtracking (from LATS)
-- Core: don't iterate endlessly on a failing branch — backtrack and try alternative paths
-- Applied: "Two strikes, then rethink" — cap retries at 2, then list alternatives
-
-### Plan-then-execute (from Plan-and-Solve + Devin checkpoints)
-- Core: decompose complex tasks into ordered steps before starting execution
-- Applied: "Plan before multi-file work" — numbered plan before touching 3+ files
-
-### Self-critique verification (from Constitutional AI)
-- Core: review own output against a checklist of principles before declaring done
-- Applied: "Completion checklist" — 5-point check before marking any task complete
-
-### File-ownership isolation (from MapCoder/ChatDev)
-- Core: parallel agents that modify the same file create merge conflicts and lost work
-- Applied: "File-ownership exclusivity" — split subagent work by file, not by feature
-
-### Self-directed memory editing (from Letta/MemGPT)
-- Core: agent actively curates its own memory — edit and delete, not just append
-- Applied: "Active memory curation" — overwrite stale entries in planning/progress files
-
-### Agent cost awareness (from token budget research)
-- Core: runaway agent loops waste tokens and context without human awareness
-- Applied: "Escalation budget" — cap at 3 failed edits, then surface to human
-
-### [Next principle you discover]
-- Core: [one line]
-- Applied: [how it changes prompts or development for this project]
-```
-
-**This library grows proactively — not just from what the developer shares.** During web research (Step 2B), actively look for novel approaches to the class of problem at hand. When you find one, extract the principle, propose it during collaboration, and if the developer finds it valuable, add it to the library. Future sessions can draw from this growing set of approaches to offer perspectives the developer would never think to look for.
-
-The developer gave you Hermes and DeerFlow as examples. Don't stop there. For any task, ask yourself: "How do other ecosystems solve this? Is there a tool, methodology, or open-source project that approaches this differently?" Surface what you find.
-
-#### 7E: The compound effect — CLAUDE.md gets better for development
-
-Session 1: Discover patterns. Propose starter CLAUDE.md focused on conventions, commands, and architecture.
-Session 3: CLAUDE.md helps Claude Code follow the right patterns during actual coding sessions.
-Session 10: CLAUDE.md is rich. Claude Code writes code that looks native to the codebase. Tests follow the project's patterns. Errors are handled consistently.
-Session 50: CLAUDE.md is institutional knowledge. New team members read it. The developer's entire Claude Code experience is better — not just prompting, but actual development.
-
-For detailed examples, the self-learning loop diagram, and CLAUDE.md structure best practices, read `references/claude-md-integration.md`.
-
-#### 7F: CLAUDE.md Bootstrap — supercharge any project on first contact
-
-When you read CLAUDE.md in Step 2 and find it's **missing, empty, or lacks agentic operating principles**, propose the bootstrap. This is what turns Prompt Forge from a prompt writer into a setup tool — anyone who drops in this skill gets a battle-tested CLAUDE.md upgrade.
-
-**When to trigger the bootstrap:**
-- No CLAUDE.md exists at all → propose a full starter
-- CLAUDE.md exists but has no agentic operating principles (no verification guardrails, no failure recovery, no context discipline) → propose adding them
-- CLAUDE.md has some principles but is missing key ones → propose the gaps only
-
-**How to propose it:**
-Don't silently write CLAUDE.md. Present the additions to the developer with a brief explanation: *"Your CLAUDE.md is missing agentic operating principles. These are research-backed patterns that make Claude Code significantly more reliable. Here's what I'd add — want me to include all of them, or pick and choose?"*
-
-**The Agentic Principles Library:**
-
-These are 8 principles derived from agent research. Each one addresses a specific failure mode that makes AI coding assistants unreliable. They belong in CLAUDE.md because they help ALL Claude Code sessions — not just Prompt Forge sessions.
-
-Propose them organized into three subsections under an "Agentic Operating Principles" heading:
-
-**Verification Guardrails** (prevent shipping broken code):
-
-1. **Reason before each edit.** Before every file edit, state in one line: what you're changing and why this specific change addresses the issue. No silent edits. *(Prevents: aimless edits that don't address root cause. From: ReAct reasoning-action pattern, Yao et al.)*
-
-2. **Run the thing you changed.** After every code modification, execute the relevant test/lint/build. Never declare "done" without execution proof. *(Prevents: "works in theory" code that fails in practice.)*
-
-3. **Plan before multi-file work.** For any task touching 3+ files, write a numbered plan of changes before making the first edit. Execute in order. *(Prevents: tangled multi-file changes with missing steps. From: Plan-and-Solve prompting + Devin's checkpoint pattern.)*
-
-4. **Completion checklist.** Before marking any task complete: (1) error paths handled, (2) types match across boundaries, (3) no blocked event loop, (4) edge states covered (empty, single, many), (5) no unused imports or dead code introduced. *(Prevents: the "it works on happy path" false confidence. From: Constitutional AI self-critique.)*
-
-**Context Discipline** (prevent drift in long sessions):
-
-5. **Anchor to files, not mental models.** In long sessions, re-read the actual file before editing again. The file is truth; your memory is stale.
-
-6. **File-ownership exclusivity for subagents.** Never assign two parallel subagents to modify the same file. If unavoidable, run sequentially. Split work by file ownership, not by feature. *(Prevents: merge conflicts and lost work. From: MapCoder/ChatDev conflict patterns.)*
-
-7. **Active memory curation.** When updating progress/planning/memory files, delete or overwrite stale entries rather than appending indefinitely. A file that only grows eventually becomes useless. *(Prevents: context pollution. From: Letta's self-directed memory editing.)*
-
-**Failure Recovery** (prevent infinite loops on errors):
-
-8. **Reflect before retrying.** After any failed attempt (test failure, lint error, crash), write a 1-sentence diagnosis of the root cause before retrying. Never retry with only code changes — always articulate what was wrong first. *(Prevents: blind retry loops. From: Reflexion, Shinn et al.)*
-
-9. **Two strikes, then rethink.** When a solution approach fails twice on the same issue, stop. List 2-3 alternative approaches with trade-offs before continuing. *(Prevents: sunk-cost persistence on failing strategies. From: LATS tree search.)*
-
-10. **Escalation budget.** If you've made more than 3 edits to fix a single issue without resolution, stop editing. Summarize what you've tried and what's failing, then ask the human for direction. *(Prevents: runaway agent loops that waste time and context. From: agent cost awareness research.)*
-
-**Adaptation rules:**
-- These are defaults. If the developer's existing CLAUDE.md already covers a principle (even in different words), don't duplicate — note that it's already handled.
-- The developer may reject some principles ("I don't want a completion checklist"). Respect that. The bootstrap is a proposal, not a mandate.
-- After the developer accepts, add them to CLAUDE.md in the project's existing style. If there's no existing style, use the lean format above (bold name + 1-2 sentence description).
-- Track what was bootstrapped in the context file under `## Bootstrap status` so you don't re-propose next session.
-
-**Why this matters:**
-A developer who drops in Prompt Forge and uses it once gets better prompts for that session. A developer whose CLAUDE.md gets bootstrapped with these principles gets better Claude Code behavior in **every session going forward** — even without Prompt Forge active. The skill pays forward.
+If you notice any of those thoughts, stop and return only the prompt.
 
 ### Step 8: Deliver and stop — but stay open
 
@@ -559,7 +395,7 @@ These are the most important use case. A short prompt from a tired developer is 
 - 2-3 clarifying questions — still easy to answer
 - 3-5 relevant lenses, surfaced as observations not interrogations
 - Full intent breakdown + refined prompt
-- Flag CLAUDE.md opportunities
+- Flag optional follow-up documentation opportunities if they are clearly helpful
 
 **Complex/multi-step prompts** (architecture changes, migrations, multi-file refactors):
 - Deep code analysis (full surface area mapping)
@@ -568,7 +404,7 @@ These are the most important use case. A short prompt from a tired developer is 
 - Most or all lenses
 - Full intent breakdown + refined prompt
 - Suggest plan mode or breaking into sub-tasks
-- Strongly consider CLAUDE.md additions
+- Suggest splitting the work into smaller prompts when helpful
 
 **Fatigue-escalation pattern:** If a prompt is extremely vague AND touches something complex (e.g., "refactor the database stuff"), don't stay in "small prompt" mode just because the prompt was short. The shortness is fatigue, not simplicity. Escalate to medium or complex mode, but keep questions easy to answer.
 
@@ -676,41 +512,13 @@ For medium and complex tasks, consider offering the user multiple output formats
 
 This lets the user choose their workflow without re-prompting.
 
-## Context File: `.claude/prompt-forge-context.md`
-
-This file is the project's cached map. It saves tokens by letting the skill skip broad codebase surveys on repeat invocations. Auto-generate it on first run. Update it when you notice it's stale.
-
-### When to generate
-- **First run:** No context file exists → do full analysis → write the file
-- **Stale detection:** User mentions files/patterns not in the context file, or directory listing shows new files not mapped → update the relevant sections
-- **Manual refresh:** User says "refresh the context" or "update prompt forge" → regenerate from scratch
-
-### What it contains
-- Project overview (name, type, stack)
-- Structure map — directories and key files for backend, frontend, database, tests, config
-- Patterns catalog — how routes, services, and tests are structured, with reference files
-- Key paths by domain — auth files, user files, DB files, etc. grouped by feature area
-- Commands — test, lint, typecheck, dev (from package.json scripts or equivalent)
-- Known conventions — patterns the codebase follows consistently
-- Known gaps & anti-patterns — missing test coverage, inconsistent patterns, tech debt
-
-### How to generate
-Read `references/context-file-template.md` for the full template and format. Fill it in from your codebase analysis. Adapt the sections to the project type (Node API, Python, frontend, monorepo, fullstack).
-
-### Token savings
-- **First run:** Same cost as without the file (full analysis + writes the file)
-- **Subsequent runs:** Read the context file (~200-400 tokens) + only the specific files relevant to the current task
-- **Estimated savings:** 60-80% fewer tokens on the grounding pass for repeat invocations
-
 ## Reference files
 
-This skill has five reference files. Read the relevant ones based on what you need:
+This skill has four reference files. Read the relevant ones based on what you need:
 
 - **`references/task-type-blueprints.md`** — Prompt blueprints for all 8 task types. Primary reference on every invocation.
 
-- **`references/claude-md-integration.md`** — Deep guide on reading from CLAUDE.md, writing back to it, proposing updates with exact text, and the evolution flywheel. Read this when proposing CLAUDE.md changes or when no CLAUDE.md exists yet.
-
-- **`references/context-file-template.md`** — Template for `.claude/prompt-forge-context.md`. Read when generating or updating the context file.
+- **`references/claude-md-integration.md`** — Background on reading existing project instructions and keeping prompt advice separate from project configuration.
 
 - **`references/anthropic-prompting-guide.md`** — Anthropic's prompting principles: XML structuring, few-shot examples, chain-of-thought, grounding checklists, CLAUDE.md best practices.
 
