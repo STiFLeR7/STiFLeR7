@@ -1,156 +1,198 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=150&section=header&text=STiFLeR7&fontSize=70&fontColor=ffffff&desc=AI%20Developer%20%26%20Researcher&descSize=18&descAlignY=72&animation=fadeIn" width="100%" alt="STiFLeR7 — Hill Patel, AI Developer and Researcher" />
-</div>
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=24&pause=1000&color=2ea043&center=true&vCenter=true&width=600&lines=AI+Researcher+%26+Developer+%7C+OSS+Contributor;Deploying+Intelligence+at+Scale;System+Status:+ONLINE+⚡" alt="AI Researcher and Developer, Open Source Contributor" />
-</div>
+<sub>VOL. 01 — IN CIRCULATION &nbsp;·&nbsp; WINTER 2026 &nbsp;·&nbsp; ISSN 2749–0041</sub>
 
-<div align="center">
-  <a href="https://hillpatel.tech"><img src="https://komarev.com/ghpvc/?username=STiFLeR7&label=PROFILE+VIEWS&color=2ea043&style=flat-square" alt="Profile views" /></a>
-  <a href="https://github.com/STiFLeR7?tab=followers"><img src="https://img.shields.io/github/followers/STiFLeR7?label=FOLLOWERS&color=2ea043&style=flat-square&logo=github" alt="GitHub followers" /></a>
-</div>
+# H I L L &nbsp;&nbsp; P A T E L
+
+<sub>A JOURNAL OF AI SYSTEMS ARCHITECTURE</sub><br />
+<sub>**APPENDIX A** — SOURCE &amp; WORKING NOTES</sub>
 
 <br />
 
-> **Hill Patel** (`STiFLeR7`) — AI Developer & Researcher at **CloudRedux**, based in **Pune, India** 🇮🇳.
-> I build **open-source Agentic AI** systems and specialize in **Large Language Models (LLMs)**, **Retrieval-Augmented Generation (RAG)**, the **Model Context Protocol (MCP)**, **Edge AI**, and **model quantization** — shipping scalable intelligence that runs on real hardware, from cloud GPUs down to 6GB consumer cards and on-device inference.
->
-> 🔭 **Currently building** [`memex`](https://github.com/STiFLeR7/memex) — persistent, bitemporal memory for AI coding agents over MCP (Tree-sitter + Gemini → Neo4j).
+<sub>AI Systems Engineer, **CloudRedux** &nbsp;·&nbsp; Pune, Maharashtra &nbsp;·&nbsp; `STiFLeR7`</sub>
+
+<br />
+
+<sub>[hillpatel.tech](https://hillpatel.tech) &nbsp;·&nbsp; [Résumé](https://hillpatel.tech) &nbsp;·&nbsp; [Begin a correspondence](mailto:stifler@hillpatel.tech)</sub>
+
+</div>
 
 ---
 
-### 📂 `>_ /sys/identify_user.py`
+<br />
 
-```python
-class Hill_Patel(AI_Researcher):
-    """
-    [INFO] Building open-source AI tools for the community.
-    [WARN] High compute requirements detected.
-    """
-    def __init__(self):
-        self.code = "STiFLeR7"
-        self.specs = {
-            "role": "AI Developer & Researcher @ CloudRedux",
-            "focus": ["Agentic AI", "MCP", "RAG", "Edge AI", "Quantization"],
-            "driver": "Deploying Scalable Intelligence"
-        }
+> ### A model is a component, not a system.
+>
+> The model will keep getting better on its own. The parts that decide whether you can
+> trust it — memory, recovery, governance — are the parts we still build by hand.
+>
+> <sub>— *Vol. 01, §01 Thesis Field Notes*</sub>
 
-    def execute_mission(self):
-        while True:
-            self.research()
-            self.optimize()
-            self.deploy("Production")
+<br />
+
+This appendix records the source. Three systems, one concern each: **persistence**,
+**recovery**, **orchestration**. Everything below is either shipped, licensed, and
+installable — or explicitly marked as held.
+
+<br />
+
+## §01 &nbsp; The Register
+
+<br />
+
+**№ 01** &nbsp;·&nbsp; **[memex](https://github.com/STiFLeR7/memex)** — *Persistence*
+<sub>Python · MIT · ★12</sub>
+
+Persistent memory for AI coding agents over the Model Context Protocol: a bitemporal
+knowledge graph of your codebase, served to Claude Code, Cursor, Gemini CLI and any MCP
+client. Tree-sitter + Gemini Flash → Neo4j via Graphiti. Twelve MCP tools, hierarchical
+clusters, two-regime confidence decay.
+
+`10k+` interactions before recall degrades &nbsp;·&nbsp; `0 drift` reconciled writes, no
+silent contradiction &nbsp;·&nbsp; `pip install memex-mcp`
+
+<br />
+
+**№ 02** &nbsp;·&nbsp; **[Cairn](https://github.com/STiFLeR7/Cairn)** — *Recovery*
+<sub>Python · Apache-2.0 · ★2</sub>
+
+Recoverable long-horizon agents: a framework-agnostic reference harness plus a
+recovery-faithful live benchmark. The thesis — *checkpoints are compactions* — argues
+recovery is re-grounding, not replay.
+
+`100%` resumable at last committed step &nbsp;·&nbsp; `<1s` median time to re-attach and
+continue &nbsp;·&nbsp; **v1.0 held** pending a powered live-LLM study
+
+<br />
+
+**№ 03** &nbsp;·&nbsp; **[nexus](https://github.com/STiFLeR7/nexus)** — *Orchestration*
+<sub>Python · MIT · ★2</sub>
+
+A governed execution platform for autonomous agents: runtime orchestration, human
+approval workflows, sandboxed execution, recovery, and operational intelligence over the
+whole run.
+
+`4 layers` agents · routing · policy · audit &nbsp;·&nbsp; `1:1` same input, same
+execution plan
+
+<br />
+
+<sub>FIG. 01 — *How it fits.*</sub>
+
+```
+   request ──▶ nexus ──────────────────────────────▶ result
+                 │  routing · policy · audit          ▲
+                 │                                    │
+                 ├──▶ memex   persistence  ───────────┤
+                 │    bitemporal graph, Neo4j         │
+                 │                                    │
+                 └──▶ Cairn   recovery     ───────────┘
+                      re-grounding, not replay
 ```
 
----
+<br />
 
-### 🌐 `>_ /net/uplink/social_protocols`
+## §02 &nbsp; Field Notes
 
-<div align="center">
+<sub>Smaller instruments, earlier volumes. Ordered by relevance, not stars.</sub>
 
-<a href="https://hillpatel.tech" target="_blank"><img src="https://img.shields.io/badge/PORTFOLIO-0d1117?style=for-the-badge&logo=vercel&logoColor=2ea043" alt="Portfolio" /></a>
-<a href="https://www.linkedin.com/in/hill-patel-stifler7/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0d1117?style=for-the-badge&logo=linkedin&logoColor=0077b5" alt="LinkedIn" /></a>
-<a href="https://medium.com/@stiflerxd" target="_blank"><img src="https://img.shields.io/badge/MEDIUM-0d1117?style=for-the-badge&logo=medium&logoColor=ffffff" alt="Medium" /></a>
-<a href="https://huggingface.co/STiFLeR7" target="_blank"><img src="https://img.shields.io/badge/HUGGINGFACE-0d1117?style=for-the-badge&logo=huggingface&logoColor=ffd21e" alt="HuggingFace" /></a>
-<a href="mailto:stifler@hillpatel.tech" target="_blank"><img src="https://img.shields.io/badge/EMAIL-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335" alt="Email" /></a>
+<br />
 
-</div>
+| | | |
+| :--- | :--- | ---: |
+| **[imgshape](https://github.com/STiFLeR7/imgshape)** | Dataset intelligence for computer vision — deterministic fingerprints, explainable decisions, reproducible artifacts. `pip install imgshape` | <sub>MIT · ★4</sub> |
+| **[Edge-LLM](https://github.com/STiFLeR7/Edge-LLM)** | Qwen2.5-3B under GPTQ: **5.75 GB → 1.93 GB**, faster inference, tuned for edge deployment. | <sub>Python · ★3</sub> |
+| **[agentic-rag](https://github.com/STiFLeR7/agentic-rag)** | Agentic RAG engineered to run reliably on one 6 GB laptop GPU. Graph-based, controllable, explicit failure handling. | <sub>Phi-3 · Gemini</sub> |
+| **[claude-plugins](https://github.com/STiFLeR7/claude-plugins)** | Claude Code marketplace — ships `memex-mcp` and [`prompt-forge`](https://github.com/STiFLeR7/prompt-forge), a prompt refinement engine. | <sub>MIT · ★3</sub> |
+| **[DevPulseAIv3](https://github.com/STiFLeR7/DevPulseAIv3)** | Multi-agent LLM pipeline turning developer signals into real-time chat, REST API and scheduled digests. | <sub>FastAPI</sub> |
+| **[personal-agent-os](https://github.com/STiFLeR7/personal-agent-os)** | Local-first agent that plans, executes and verifies. Designed to listen, remember, assist. | <sub>Python</sub> |
 
----
+<sub>Also in circulation: [antigravity](https://github.com/STiFLeR7/antigravity) · [vision-to-action](https://github.com/STiFLeR7/vision-to-action) · [gradia](https://github.com/STiFLeR7/gradia) · [MedMNIST-EdgeAI](https://github.com/STiFLeR7/MedMNIST-EdgeAI) — [the full index →](https://github.com/STiFLeR7?tab=repositories)</sub>
 
-### 🛠️ `>_ /sys/modules/technical_skills`
+<br />
 
-<div align="center">
+## Interlude — on shipping
 
-**🧠 Agentic AI & Retrieval** &nbsp;·&nbsp; MCP · RAG · LangGraph · Vector Search · Neo4j · Knowledge Graphs
-![MCP](https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=anthropic&logoColor=white)
-![RAG](https://img.shields.io/badge/RAG-2ea043?style=flat-square&logo=openai&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-0d1117?style=flat-square&logo=graphql&logoColor=2ea043)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white)
-![Gemini](https://img.shields.io/badge/Google_ADK_/_Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white)
+<br />
 
-**⚡ Model Optimization** &nbsp;·&nbsp; Quantization · ONNX · TensorRT · CUDA · Pruning
-![Quantization](https://img.shields.io/badge/Quantization_(1--8_bit)-ff6b6b?style=flat-square&logo=compress&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white)
-![TensorRT](https://img.shields.io/badge/TensorRT-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
+Constraint first. If it cannot run on 6 GB of consumer VRAM, it is not finished — cloud
+GPUs are an optimisation, not a prerequisite.
 
-**🔬 ML Engineering** &nbsp;·&nbsp; Transformers · CNNs · Multimodal · PyTorch · TensorFlow
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+Benchmarks before claims. Cairn is pinned at 0.x on purpose; the version number is a
+statement about evidence, not about effort.
 
-**🚀 Backend & MLOps** &nbsp;·&nbsp; FastAPI · Docker · GitHub Actions · Redis · GCP · AWS
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=FF9900)
+Published means installable. PyPI, a license, and documentation, or it stays a field note.
 
-</div>
+Failure modes go in writing — quantisation deltas, recall decay curves, recovery
+latency. The number that embarrasses you is the one worth publishing.
 
----
+<br />
 
-### 💾 `>_ /var/log/deployed_intelligences`
+## §03 &nbsp; Instruments
 
-<div align="center">
+<br />
 
-| **PROJECT** | **MISSION BRIEF** | **CORE TECH** |
-| :--- | :--- | :--- |
-| <a href="https://github.com/STiFLeR7/memex"><b>🧠 memex</b></a> ⭐ | `[MCP-MEMORY]` Persistent, bitemporal knowledge graph of your codebase, served to Claude Code, Cursor & any MCP client. 14 MCP tools, Tree-sitter + Gemini → Neo4j. | `MCP` `Neo4j` `Graphiti` |
-| <a href="https://github.com/STiFLeR7/imgshape"><b>📦 imgshape</b></a> ⭐ | `[CV-TOOLKIT]` Dataset intelligence toolkit — deterministic fingerprints, explainable decisions & production-ready artifacts for reproducible ML. | `Python` `PyPI` `CV` |
-| <a href="https://github.com/STiFLeR7/agentic-rag"><b>🔎 agentic-rag</b></a> | `[RAG-SYSTEM]` Production-grade Agentic RAG that runs reliably on 6GB consumer GPUs (RTX 3050). Controllable, graph-based, explicit failure handling. | `LangGraph` `RAG` `Agents` |
-| <a href="https://github.com/STiFLeR7/DevPulseAIv3"><b>⚡ DevPulseAIv3</b></a> | `[PLATFORM]` Cloud-native intelligence platform — multi-agent LLM pipeline aggregates dev signals into real-time chat, REST API & scheduled digests. | `Multi-Agent` `FastAPI` `LLM` |
-| <a href="https://github.com/STiFLeR7/prompt-forge"><b>🛠️ prompt-forge</b></a> ⭐ | `[DEV-TOOL]` Prompt refinement engine — packaged as a Claude Code plugin. | `JavaScript` `LLM` `MCP` |
-| <a href="https://github.com/STiFLeR7/dex"><b>🤖 dex</b></a> | `[AI-ASSISTANT]` Persistent, memory-aware personal AI assistant built on the Model Context Protocol. | `MCP` `TypeScript` `LLM` |
+**Agent infrastructure** &nbsp; Model Context Protocol · bitemporal memory · knowledge
+graphs · durable execution · re-grounding recovery · policy &amp; audit layers
 
-</div>
+**Retrieval** &nbsp; RAG · Agentic RAG · LangGraph · vector search · Neo4j · Graphiti ·
+Tree-sitter
 
----
+**Optimisation** &nbsp; GPTQ &amp; 1–8 bit quantisation · distillation · pruning · ONNX
+Runtime · TensorRT · CUDA
 
-### 📜 `>_ /var/log/certifications`
+**Learning** &nbsp; PyTorch · TensorFlow · Transformers · CNNs · multimodal · OpenCV
 
-- **Published Research** — *Transforming Urban Solutions for Smart Cities through Crowdsourced Feedback* (Mar 2025)
-- **MCP Mastery** — Model Context Protocol · *Fractal Analytics*
-- **Professional Certificate** — RAG and Agentic AI · *Coursera*
-- **Course Completion** — Neural Networks with PyTorch · *Coursera*
+**Delivery** &nbsp; Python · TypeScript · FastAPI · Docker · GitHub Actions · Redis ·
+GCP · AWS
 
----
+<br />
 
-### 📡 `>_ /net/uplink/latest_transmissions`
-<!-- BLOG-POST-LIST:START -->
-- [Building a Memory Layer for Claude Code, Cursor, and Gemini CLI](https://medium.com/@stiflerxd/building-a-memory-layer-for-claude-code-cursor-and-gemini-cli-ebbe0300f07a?source=rss-8f87c3f0f707------2)
-- [Most Vision AI Systems Stop at Detection — I Built One That Takes Action](https://medium.com/@stiflerxd/most-vision-ai-systems-stop-at-detection-i-built-one-that-takes-action-ce439f904215?source=rss-8f87c3f0f707------2)
-- [Most RAG Systems Fail Quietly — Here’s How I Built a 98%-Accurate Agent on a 6GB GPU](https://medium.com/@stiflerxd/most-rag-systems-fail-quietly-heres-how-i-built-a-98-accurate-agent-on-a-6gb-gpu-4edc9d05116e?source=rss-8f87c3f0f707------2)
-- [MedMNIST-EdgeAI: Compressing Medical Imaging Models for Efficient Edge Deployment](https://medium.com/@stiflerxd/medmnist-edgeai-compressing-medical-imaging-models-for-efficient-edge-deployment-e12f160d6f36?source=rss-8f87c3f0f707------2)
-- [LCM vs. LLM + RAG](https://medium.com/@stiflerxd/lcm-vs-llm-rag-11f656f1c71e?source=rss-8f87c3f0f707------2)
-<!-- BLOG-POST-LIST:END -->
+## §04 &nbsp; Record
 
----
+<br />
 
-### 📊 `>_ /sys/monitoring/telemetry`
+**Published** &nbsp; *Transforming Urban Solutions for Smart Cities through Crowdsourced
+Feedback* — March 2025
+
+**Certified** &nbsp; MCP Mastery, *Fractal Analytics* · RAG and Agentic AI, *Coursera* ·
+Neural Networks with PyTorch, *Coursera*
+
+<br />
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=STiFLeR7&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=2ea043&icon_color=2ea043&count_private=true" height="170" alt="GitHub stats for STiFLeR7" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=STiFLeR7&theme=dark&hide_border=true&background=0D1117&ring=2ea043&fire=2ea043&currStreakLabel=2ea043" height="170" alt="GitHub contribution streak" />
+<img src="https://github-readme-stats.vercel.app/api?username=STiFLeR7&show_icons=true&hide_border=true&bg_color=00000000&title_color=57606a&text_color=57606a&icon_color=57606a&hide_title=true&count_private=true" width="440" alt="GitHub statistics for STiFLeR7" />
 
-<br /><br />
-
-<img src="https://raw.githubusercontent.com/STiFLeR7/STiFLeR7/master/github-metrics.svg" width="480" alt="GitHub activity metrics" />
-
-<br /><br />
-
-<img src="https://raw.githubusercontent.com/STiFLeR7/STiFLeR7/output/pacman-contribution-graph.svg" alt="Pacman contribution graph" />
+<sub>FIG. 02 — *Telemetry.* 59 repositories, mostly Python. Since January 2024.</sub>
 
 </div>
 
 <br />
 
+## §05 &nbsp; Colophon &amp; Correspondence
+
+<br />
+
+```yaml
+editor:   Hill Patel — STiFLeR7
+station:  CloudRedux · Pune, Maharashtra, India
+volume:   01 — Persistent Systems
+subject:  the architecture around the model
+set in:   Python, mostly
+```
+
+[**hillpatel.tech**](https://hillpatel.tech) &nbsp;·&nbsp;
+[LinkedIn](https://www.linkedin.com/in/hill-patel-stifler7/) &nbsp;·&nbsp;
+[X](https://x.com/hillpatel07) &nbsp;·&nbsp;
+[Medium](https://medium.com/@stiflerxd) &nbsp;·&nbsp;
+[Hugging Face](https://huggingface.co/STiFLeR7) &nbsp;·&nbsp;
+[stifler@hillpatel.tech](mailto:stifler@hillpatel.tech)
+
+<br />
+
+---
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=161b22&height=60&section=footer&text=%3C%2F%3E%20deploying%20intelligence%20at%20scale&fontSize=14&fontColor=2ea043" width="100%" alt="deploying intelligence at scale" />
+<sub>© 2026 Hill Patel &nbsp;/&nbsp; Vol. 01 — Persistent Systems &nbsp;/&nbsp; Architect · Editorial · Engineer</sub>
 </div>
