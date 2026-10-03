@@ -1,4 +1,8 @@
+<img src="assets/hands.png" alt="A robot hand and a human hand reaching toward each other in neon blue" width="100%" />
+
 <div align="center">
+
+<br />
 
 <sub>VOL. 01 — IN CIRCULATION &nbsp;·&nbsp; WINTER 2026 &nbsp;·&nbsp; ISSN 2749–0041</sub>
 
@@ -9,11 +13,11 @@
 
 <br />
 
-<sub>AI Systems Engineer, **CloudRedux** &nbsp;·&nbsp; Pune, Maharashtra &nbsp;·&nbsp; `STiFLeR7`</sub>
+<sub>AI Engineer, Agentic Systems &amp; Infrastructure, **CloudRedux** &nbsp;·&nbsp; Pune, Maharashtra &nbsp;·&nbsp; `STiFLeR7`</sub>
 
 <br />
 
-<sub>[hillpatel.tech](https://hillpatel.tech) &nbsp;·&nbsp; [Résumé](https://hillpatel.tech) &nbsp;·&nbsp; [Begin a correspondence](mailto:stifler@hillpatel.tech)</sub>
+<sub>[stifler.in](https://stifler.in) &nbsp;·&nbsp; [Résumé](https://stifler.in) &nbsp;·&nbsp; [Begin a correspondence](mailto:hillpatel.0710@gmail.com)</sub>
 
 </div>
 
@@ -44,12 +48,14 @@ installable — or explicitly marked as held.
 <sub>Python · MIT · ★12</sub>
 
 Persistent memory for AI coding agents over the Model Context Protocol: a bitemporal
-knowledge graph of your codebase, served to Claude Code, Cursor, Gemini CLI and any MCP
-client. Tree-sitter + Gemini Flash → Neo4j via Graphiti. Twelve MCP tools, hierarchical
-clusters, two-regime confidence decay.
+knowledge graph of your codebase, served to Claude Code, Cursor, Codex, Gemini CLI and any
+MCP client. Tree-sitter + Gemini Flash → Neo4j via Graphiti. Fourteen MCP tools,
+hierarchical clusters, three-regime confidence decay, supersession and conflict detection. Published on PyPI, npm
+and the MCP Registry.
 
 `10k+` interactions before recall degrades &nbsp;·&nbsp; `0 drift` reconciled writes, no
-silent contradiction &nbsp;·&nbsp; `pip install memex-mcp`
+silent contradiction &nbsp;·&nbsp; `5K+` PyPI downloads &nbsp;·&nbsp; `8/8` paired evaluation
+runs, zero treatment regressions &nbsp;·&nbsp; `pip install memex-mcp`
 
 <br />
 
@@ -58,10 +64,12 @@ silent contradiction &nbsp;·&nbsp; `pip install memex-mcp`
 
 Recoverable long-horizon agents: a framework-agnostic reference harness plus a
 recovery-faithful live benchmark. The thesis — *checkpoints are compactions* — argues
-recovery is re-grounding, not replay.
+recovery is re-grounding, not replay. It also ships as a standalone bring-your-own-model
+library, so you can add crash recovery to any agent without adopting a framework.
 
-`100%` resumable at last committed step &nbsp;·&nbsp; `<1s` median time to re-attach and
-continue &nbsp;·&nbsp; **v1.0 held** pending a powered live-LLM study
+`100%` resumable at last committed step &nbsp;·&nbsp; `91` sealed-holdout test cells, zero
+duplicate or silently lost actions &nbsp;·&nbsp; `<1s` median time to re-attach and continue &nbsp;·&nbsp; **v1.0 held** pending a powered
+live-LLM study
 
 <br />
 
@@ -100,7 +108,8 @@ execution plan
 
 | | | |
 | :--- | :--- | ---: |
-| **[imgshape](https://github.com/STiFLeR7/imgshape)** | Dataset intelligence for computer vision — deterministic fingerprints, explainable decisions, reproducible artifacts. `pip install imgshape` | <sub>MIT · ★4</sub> |
+| **[Tencent/teamai-cli](https://github.com/Tencent/teamai-cli)** | Contributor. Fixed Windows shell-profile detection ([#715](https://github.com/Tencent/teamai-cli/pull/715)) and multi-repo init config delivery ([#873](https://github.com/Tencent/teamai-cli/pull/873)), both merged. | <sub>Upstream</sub> |
+| **[imgshape](https://github.com/STiFLeR7/imgshape)** | Dataset intelligence for computer vision — deterministic fingerprints, explainable decisions, reproducible artifacts. `8.8K+` downloads. `pip install imgshape` | <sub>MIT · ★4</sub> |
 | **[Edge-LLM](https://github.com/STiFLeR7/Edge-LLM)** | Qwen2.5-3B under GPTQ: **5.75 GB → 1.93 GB**, faster inference, tuned for edge deployment. | <sub>Python · ★3</sub> |
 | **[agentic-rag](https://github.com/STiFLeR7/agentic-rag)** | Agentic RAG engineered to run reliably on one 6 GB laptop GPU. Graph-based, controllable, explicit failure handling. | <sub>Phi-3 · Gemini</sub> |
 | **[claude-plugins](https://github.com/STiFLeR7/claude-plugins)** | Claude Code marketplace — ships `memex-mcp` and [`prompt-forge`](https://github.com/STiFLeR7/prompt-forge), a prompt refinement engine. | <sub>MIT · ★3</sub> |
@@ -135,8 +144,8 @@ latency. The number that embarrasses you is the one worth publishing.
 **Agent infrastructure** &nbsp; Model Context Protocol · bitemporal memory · knowledge
 graphs · durable execution · re-grounding recovery · policy &amp; audit layers
 
-**Retrieval** &nbsp; RAG · Agentic RAG · LangGraph · vector search · Neo4j · Graphiti ·
-Tree-sitter
+**Retrieval** &nbsp; RAG · Agentic RAG · LangGraph · Google ADK · hybrid &amp; vector
+search · re-ranking · Weaviate · Neo4j · Graphiti · Tree-sitter
 
 **Optimisation** &nbsp; GPTQ &amp; 1–8 bit quantisation · distillation · pruning · ONNX
 Runtime · TensorRT · CUDA
@@ -144,13 +153,20 @@ Runtime · TensorRT · CUDA
 **Learning** &nbsp; PyTorch · TensorFlow · Transformers · CNNs · multimodal · OpenCV
 
 **Delivery** &nbsp; Python · TypeScript · FastAPI · Docker · GitHub Actions · Redis ·
-GCP · AWS
+PostgreSQL · OpenTelemetry · Vertex AI · Cloudflare Workers · GCP · AWS
 
 <br />
 
 ## §04 &nbsp; Record
 
 <br />
+
+**Practice** &nbsp; AI Engineer, *CloudRedux* (2026–present): a meta-level agent harness
+for execution, validation and recovery · a default-deny tool boundary for agents · LLM
+routing that cut API costs by 66%
+
+**Studied** &nbsp; B.Tech, Artificial Intelligence &amp; Machine Learning, *NIMS University*
+— 2026
 
 **Published** &nbsp; *Transforming Urban Solutions for Smart Cities through Crowdsourced
 Feedback* — March 2025
@@ -182,12 +198,12 @@ subject:  the architecture around the model
 set in:   Python, mostly
 ```
 
-[**hillpatel.tech**](https://hillpatel.tech) &nbsp;·&nbsp;
+[**stifler.in**](https://stifler.in) &nbsp;·&nbsp;
 [LinkedIn](https://www.linkedin.com/in/hill-patel-stifler7/) &nbsp;·&nbsp;
 [X](https://x.com/hillpatel07) &nbsp;·&nbsp;
 [Medium](https://medium.com/@stiflerxd) &nbsp;·&nbsp;
 [Hugging Face](https://huggingface.co/STiFLeR7) &nbsp;·&nbsp;
-[stifler@hillpatel.tech](mailto:stifler@hillpatel.tech)
+[hillpatel.0710@gmail.com](mailto:hillpatel.0710@gmail.com)
 
 <br />
 
